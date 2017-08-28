@@ -1,4 +1,4 @@
 # assignment_solutions
 ITT Assignment 1 solution
 
-Refer ITT_ASSIGNMENT_I.pdf in the root
+Refer [a relative link](ITT_ASSIGNMENT_I.pdf)
