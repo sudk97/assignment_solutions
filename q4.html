@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+</head>
+<body>
+	<table border="1px" style="background-color:lightpink	" id="htmltable">
+		<th>Author</th>
+		<th>Title</th>
+		<th>Price</th>
+		<th>Quantity</th>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+			<td>a</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		var tableRow = document.getElementById("htmltable").rows;
+		console.log(length);
+		for(var i=1;i<tableRow.length;i++){
+				if (i%2===0)
+				tableRow[i].setAttribute('style',"background-color:green");
+				tableRow[i].addEventListener("mouseover",function(){
+
+						this.setAttribute('style',"background-color:yellow");
+				},true);
+				tableRow[i].addEventListener("mouseout",function(){
+					
+						this.setAttribute('style',"background-color:lightpink");
+				},true);
+
+				console.log(tableRow[i]);
+		}
+
+	</script>
+</body>
+</html>
