@@ -1,3 +1,4 @@
 # assignment_solutions
 ITT Assignment 1 solution
-Solution to ITT Assignment 1
+
+Refer ITT_ASSIGNMENT_I.pdf in the root
