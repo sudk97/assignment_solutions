@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Question 8
+	</title>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<h1 style="align-content: center"> Make a choice </h1>
+	<form>
+			Factorial<input type="radio" name="selection" id="fact" checked="true"><br>
+			Multiplication<input type="radio" name="selection" id="multi"><br>
+			<input type="submit" name="Submit" id="submit">
+	</form>
+	<script type="text/javascript">
+		document.getElementById("submit").addEventListener("click", evaluateChoice);
+	</script>
+</body>
+</html>
