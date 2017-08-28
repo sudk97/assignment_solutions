@@ -9,37 +9,37 @@
 		<th>Title</th>
 		<th>Price</th>
 		<th>Quantity</th>
-		<tr>
+		<tr onmouseover="change(1)" onmouseout="revert(1)">
 			<td>1</td>
 			<td>2</td>
 			<td>3</td>
 			<td>4</td>
 		</tr>
-		<tr>
+		<tr onmouseover="change(2)" onmouseout="revert(2)">
 			<td>a</td>
 			<td>a</td>
 			<td>a</td>
 			<td>a</td>
 		</tr>
-		<tr>
+		<tr  onmouseover="change(3)" onmouseout="revert(3)">
 			<td>a</td>
 			<td>a</td>
 			<td>a</td>
 			<td>a</td>
 		</tr>
-		<tr>
+		<tr onmouseover="change(4)" onmouseout="revert(4)">
 			<td>a</td>
 			<td>a</td>
 			<td>a</td>
 			<td>a</td>
 		</tr>
-		<tr>
+		<tr onmouseover="change(5)" onmouseout="revert(5)">
 			<td>a</td>
 			<td>a</td>
 			<td>a</td>
 			<td>a</td>
 		</tr>
-		<tr>
+		<tr onmouseover="change(6)" onmouseout="revert(6)">
 			<td>a</td>
 			<td>a</td>
 			<td>a</td>
@@ -50,18 +50,24 @@
 		var tableRow = document.getElementById("htmltable").rows;
 		console.log(length);
 		for(var i=1;i<tableRow.length;i++){
-				if (i%2===0)
+				if (i%2==0)
 				tableRow[i].setAttribute('style',"background-color:green");
-				tableRow[i].addEventListener("mouseover",function(){
-
-						this.setAttribute('style',"background-color:yellow");
-				},true);
-				tableRow[i].addEventListener("mouseout",function(){
-					
-						this.setAttribute('style',"background-color:lightpink");
-				},true);
-
+				else 
+				tableRow[i].setAttribute('style',"background-color:blue");
 				console.log(tableRow[i]);
+		}
+
+
+		function change(i)
+		{
+			tableRow[i].setAttribute('style',"background-color:yellow");
+		}
+		function revert(i)
+		{
+				if (i%2==0)
+				tableRow[i].setAttribute('style',"background-color:green");
+				else 
+				tableRow[i].setAttribute('style',"background-color:blue");
 		}
 
 	</script>
